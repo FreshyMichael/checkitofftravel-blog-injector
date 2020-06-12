@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Check-it-Off Travel Blog Injector
-* Plugin URI: https://github.com/FreshyMichael/fs-blog-injector
+* Plugin URI: https://github.com/FreshyMichael/checkitofftravel-blog-injector
 * Description: Inject content into Divi Blog Module output
 * Version: 1.0.0
 * Author: FreshySites
@@ -50,7 +50,7 @@ function fs_890531_the_post()
 
  if( (!is_paged() && !is_singular()) && ($loop_counter == 14 )) {
    echo '<div class="blog-img-injection"><center>';
-   echo do_shortcode('[et_pb_section global_module="16333"][/et_pb_section]');
+   echo do_shortcode('[et_pb_section global_module="14963"][/et_pb_section]');
    echo '</center></div>';
    $loop_counter = $loop_counter + 1;
  }
@@ -64,15 +64,11 @@ global $loop_counter_paged;
  }
  if( (is_paged() ) && ($loop_counter == 14) ) {
    echo '<div class="blog-img-injection">';
-   echo do_shortcode('[et_pb_section global_module="16333"][/et_pb_section]');
+   echo do_shortcode('[et_pb_section global_module="14963"][/et_pb_section]');
    echo '</div>';
    $loop_counter_paged = $loop_counter_paged + 1;
  }
-   /*
-   static $nr = 0;
-
-   if( 0 === ++$nr % 8 )
-       echo do_shortcode('[ds_layout_sc id="14816"]','<br>'); */
+   
 }
 function fs_890531_loop_end()
 {
